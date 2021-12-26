@@ -8,7 +8,7 @@ import json
 import cv2
 
 
-API='https://mktestprodrelease-yolov5.dev.target.com/infer/'
+API='https://<inferenceapi>/infer/'
 
 def get_detections(img):
     content_type = "image/jpeg"
@@ -29,7 +29,7 @@ def get_detections(img):
 
 
 #cap = cv2.VideoCapture("rtsp://192.168.0.27:8554/x",cv2.CAP_FFMPEG )
-cap=cv2.VideoCapture("rtsp://bijusubb:Divyasree1@192.168.0.23:554/stream1",cv2.CAP_FFMPEG)
+cap=cv2.VideoCapture("rtsp://<username>:<password>@192.168.0.23:554/stream1",cv2.CAP_FFMPEG)
 cnt=0
 detections="warming up"
 #cap=cv2.VideoCapture(0)
